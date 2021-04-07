@@ -84,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.0, 565.0, 123.0, 22.0 ],
+					"patching_rect" : [ 296.0, 69.0, 123.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 847.0, 128.5, 123.0, 22.0 ],
 					"text" : "roomName testRoom"
@@ -123,7 +123,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 271.5, 82.0, 22.0 ],
+					"patching_rect" : [ 158.0, 128.5, 82.0, 22.0 ],
 					"text" : "prepend send"
 				}
 
@@ -356,6 +356,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -428,7 +430,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 

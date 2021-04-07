@@ -1,0 +1,26 @@
+{
+  "name": "cidsocketserver",
+  "version": "1.0.0",
+  "description": "SocketIOServer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnricoPietrocola/CidSocketServer.git"
+  },
+  "author": "Enrico Pietrocola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnricoPietrocola/CidSocketServer/issues"
+  },
+  "homepage": "https://github.com/EnricoPietrocola/CidSocketServer#readme",
+  "devDependencies": {
+    "socket.io": "^3.1.1",
+    "socket.io-client": "^3.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
