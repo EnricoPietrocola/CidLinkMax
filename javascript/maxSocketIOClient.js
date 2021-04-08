@@ -4,8 +4,8 @@ const Max = require('max-api');
 
 const io = require("socket.io-client");
 
-//let ioClient = io.connect("http://116.203.114.204:5000");
-let ioClient = io.connect("http://127.0.0.1:5000");
+let ioClient = io.connect("http://116.203.114.204:5000");
+//let ioClient = io.connect("http://127.0.0.1:5000");
 
 let roomName;
 // This will be printed directly to the Max console
@@ -19,7 +19,9 @@ Max.addHandler("roomName", (msg)=> {
 })
 
 Max.addHandler("address", (msg)=> {
-    ioClient = io.connect(msg)
+    ioClient.disconnect().then(() => {
+        ioClient = io.connect(msg)
+    })
 })
 
 Max.addHandler("send", (msg) => {
@@ -28,6 +30,7 @@ Max.addHandler("send", (msg) => {
 });
 
 ioClient.on('datachannel', (msg)=> {
+    console.log("DEBUG received " + msg)
     Max.outlet(msg)
 })
 
