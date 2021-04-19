@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 682.0, 85.0, 810.0, 920.0 ],
+		"rect" : [ 506.0, 85.0, 1093.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -442,7 +442,7 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "C:/Program Files/nodejs/node.exe",
+						"node_bin_path" : "",
 						"watch" : 0
 					}
 ,
