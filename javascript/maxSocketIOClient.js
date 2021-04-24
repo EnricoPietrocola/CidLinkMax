@@ -11,6 +11,9 @@ let roomName;
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
 
+const dictIdIn = "LinkMessageIn";
+const dictIdOut = "LinkMessageOut";
+
 //ioClient.emit('echo', 'hi');
 
 Max.addHandler("roomName", (msg)=> {
@@ -25,17 +28,13 @@ Max.addHandler("address", (msg)=> {
 
 Max.addHandler("send", (msg) => {
     //Max.post(msg);
-    ioClient.emit("datachannel", roomName, JSON.stringify(msg));
+    ioClient.emit("datachannel", roomName, msg);
 });
 
 ioClient.on('datachannel', (msg)=> {
-    if (msg !== undefined && msg !== null) {
-        if (isJson(msg)) {
-            msg = JSON.parse(msg)
-        } else {
-        }
-    }
     console.log("DEBUG received " + msg)
+    Max.setDict(dictIdIn, msg)
+
     Max.outlet(msg)
 })
 
@@ -50,6 +49,28 @@ ioClient.on("disconnect", (msg)=> {
     Max.post("disconnected")
     Max.outlet("disconnected")
 })
+
+
+
+
+Max.addHandler("bang", () => {
+    /*Max.getDict("LinkMessage").then((result)=> {
+        Max.outlet(result);
+
+    })*/
+    getLinkDict().then(r =>{
+        ioClient.emit("datachannel", roomName, r);
+    })
+});
+
+async function getLinkDict(){
+    try {
+        // dict contains the dict's contents
+        return await Max.getDict(dictIdOut)
+    } catch (err) {
+        // handle Error here
+    }
+}
 
 function isJson(str) {
     try {
