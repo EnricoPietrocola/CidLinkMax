@@ -1,5 +1,7 @@
 # CidLinkMax
-CidLink NodeJS communication for MaxMSP
+CidLink communication for MaxMSP
+
+A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks.
 
 WORK IN PROGRESS
 
