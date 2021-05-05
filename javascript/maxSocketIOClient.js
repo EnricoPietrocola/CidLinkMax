@@ -4,7 +4,8 @@ const Max = require('max-api');
 
 const io = require("socket.io-client");
 
-let ioClient = io.connect("http://116.203.114.204:5000");
+let address = "http://116.203.114.204:5000";
+let ioClient = io.connect(address);
 //let ioClient = io.connect("http://127.0.0.1:5000");
 
 let roomName;
@@ -22,9 +23,15 @@ Max.addHandler("roomName", (msg)=> {
 })
 
 Max.addHandler("address", (msg)=> {
+    address = msg
     ioClient.disconnect()
-    ioClient.connect(msg)
+    ioClient = io.connect(address);
 })
+
+/*ioClient.on("disconnect", ()=> {
+    ioClient.connect(msg)
+    }
+)*/
 
 Max.addHandler("send", (msg) => {
     //Max.post(msg);
