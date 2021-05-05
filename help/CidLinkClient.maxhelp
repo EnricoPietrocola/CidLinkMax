@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 720.0, 165.0, 809.0, 432.0 ],
+		"rect" : [ 100.0, 100.0, 809.0, 494.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
@@ -89,7 +90,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 720.0, 191.0, 809.0, 406.0 ],
+						"rect" : [ 100.0, 126.0, 809.0, 468.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -148,7 +149,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 519.0, 375.0, 242.0, 25.0 ],
-									"presentation_linecount" : 4,
 									"text" : "receive messages from other users"
 								}
 
@@ -273,7 +273,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 519.0, 199.0, 207.0, 40.0 ],
-									"presentation_linecount" : 4,
 									"text" : "send something to all connected clients to the room "
 								}
 
@@ -313,7 +312,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 404.0, 199.0, 106.0, 23.0 ],
-									"presentation_linecount" : 2,
 									"text" : "anythingyouwant"
 								}
 
@@ -333,12 +331,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"linecount" : 5,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.0, 27.0, 207.0, 96.0 ],
-									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\n\nSponsored by TempoReale\ntemporeale.it\n"
+									"patching_rect" : [ 561.0, 27.0, 208.0, 141.0 ],
+									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\n\nSource code at:\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nSponsored by TempoReale\ntemporeale.it"
 								}
 
 							}
@@ -398,7 +396,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 91.0, 487.0, 36.0 ],
+									"patching_rect" : [ 57.0, 91.0, 490.0, 36.0 ],
 									"text" : "A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks."
 								}
 
@@ -506,7 +504,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 809.0, 406.0 ],
+						"rect" : [ 0.0, 26.0, 809.0, 468.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
