@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 290.0, 85.0, 666.0, 913.0 ],
+		"rect" : [ 290.0, 85.0, 871.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -119,7 +119,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 218.0, 12.0, 30.0, 30.0 ]
 				}
 
@@ -438,14 +438,16 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 353.0, 354.0, 257.0, 22.0 ],
+					"patching_rect" : [ 353.0, 354.0, 314.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"watch" : 0
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
+						"watch" : 1
 					}
 ,
-					"text" : "node.script maxSocketIOClient.js @autostart 1"
+					"text" : "node.script maxSocketIOClient.js @autostart 1 @watch 1"
 				}
 
 			}
