@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 290.0, 85.0, 871.0, 913.0 ],
+		"rect" : [ 42.0, 85.0, 871.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -245,7 +245,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 371.0, 380.5, 207.5, 34.0 ],
+					"patching_rect" : [ 360.0, 383.0, 207.5, 34.0 ],
 					"text" : "Use @autostart 1 when your script should start once you open the patch"
 				}
 
@@ -438,7 +438,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 353.0, 354.0, 314.0, 22.0 ],
+					"patching_rect" : [ 353.0, 354.0, 305.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -447,7 +447,7 @@
 						"watch" : 1
 					}
 ,
-					"text" : "node.script maxSocketIOClient.js @autostart 1 @watch 1"
+					"text" : "node.script CidLinkMaxClient.js @autostart 1 @watch 1"
 				}
 
 			}
@@ -463,7 +463,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 603.0, 346.0, 114.647499084472656, 39.0 ]
+					"patching_rect" : [ 591.0, 246.5, 114.647499084472656, 39.0 ]
 				}
 
 			}
