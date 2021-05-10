@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 809.0, 494.0 ],
+		"rect" : [ 100.0, 85.0, 1201.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 809.0, 468.0 ],
+						"rect" : [ 0.0, 26.0, 1201.0, 894.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -325,8 +325,8 @@
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 404.0, 338.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
@@ -447,7 +447,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 809.0, 468.0 ],
+						"rect" : [ 42.0, 85.0, 809.0, 468.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -479,13 +479,25 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-22",
-									"linecount" : 3,
-									"maxclass" : "comment",
+									"id" : "obj-40",
+									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 145.5, 268.0, 225.5, 51.0 ],
-									"text" : "Packing data with dict will ensure your data preserves type. Avoiding string/symbol only communication"
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 188.0, 486.0, 135.0, 23.0 ],
+									"text" : "prepend setDictionary"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 188.0, 455.0, 97.0, 23.0 ],
+									"text" : "route dictionary"
 								}
 
 							}
@@ -502,7 +514,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 439.0, 8.0, 26.0, 24.0 ],
+									"patching_rect" : [ 110.0, 170.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -519,8 +531,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 467.0, 8.0, 131.0, 55.0 ],
-									"presentation_linecount" : 3,
+									"patching_rect" : [ 138.0, 170.0, 135.0, 55.0 ],
 									"text" : "data added to a dict will be sent as a JSON object"
 								}
 
@@ -531,7 +542,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 649.0, 544.0, 100.0, 100.0 ]
+									"patching_rect" : [ 412.0, 655.0, 100.0, 100.0 ]
 								}
 
 							}
@@ -542,7 +553,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 649.0, 510.0, 120.0, 23.0 ],
+									"patching_rect" : [ 412.0, 621.0, 120.0, 23.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -561,7 +572,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 767.0, 463.0, 24.0, 24.0 ]
+									"patching_rect" : [ 530.0, 574.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -572,8 +583,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 798.5, 463.0, 89.0, 23.0 ],
-									"text" : "disconnected"
+									"patching_rect" : [ 561.5, 574.0, 89.0, 23.0 ],
+									"text" : "dictionary"
 								}
 
 							}
@@ -584,7 +595,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 650.0, 463.0, 23.0, 23.0 ],
+									"patching_rect" : [ 413.0, 574.0, 23.0, 23.0 ],
 									"text" : "t b"
 								}
 
@@ -597,7 +608,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 650.0, 334.0, 24.0, 24.0 ]
+									"patching_rect" : [ 413.0, 445.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -606,9 +617,9 @@
 									"id" : "obj-26",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 650.0, 418.0, 85.0, 23.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 413.0, 529.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -620,7 +631,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 499.0, 103.0, 78.0, 23.0 ],
+									"patching_rect" : [ 170.0, 265.0, 78.0, 23.0 ],
 									"text" : "random 100"
 								}
 
@@ -631,7 +642,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 405.0, 317.0, 100.0, 100.0 ]
+									"patching_rect" : [ 76.0, 479.0, 100.0, 100.0 ]
 								}
 
 							}
@@ -643,7 +654,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 405.0, 8.0, 24.0, 24.0 ]
+									"patching_rect" : [ 76.0, 170.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -655,7 +666,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 499.0, 131.0, 50.0, 23.0 ]
+									"patching_rect" : [ 170.0, 293.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -666,7 +677,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "bang" ],
-									"patching_rect" : [ 405.0, 50.0, 45.0, 23.0 ],
+									"patching_rect" : [ 76.0, 212.0, 45.0, 23.0 ],
 									"text" : "t b b b"
 								}
 
@@ -678,7 +689,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.0, 128.0, 37.0, 23.0 ],
+									"patching_rect" : [ 110.0, 290.0, 37.0, 23.0 ],
 									"text" : "/msg"
 								}
 
@@ -690,7 +701,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.0, 170.0, 53.0, 23.0 ],
+									"patching_rect" : [ 110.0, 332.0, 53.0, 23.0 ],
 									"text" : "pack s i"
 								}
 
@@ -702,7 +713,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 439.0, 197.0, 77.0, 23.0 ],
+									"patching_rect" : [ 110.0, 359.0, 77.0, 23.0 ],
 									"text" : "prepend set"
 								}
 
@@ -714,7 +725,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 405.0, 268.0, 130.0, 23.0 ],
+									"patching_rect" : [ 76.0, 409.0, 130.0, 23.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -739,7 +750,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 696.0, 337.0, 26.0, 24.0 ],
+									"patching_rect" : [ 459.0, 448.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -759,7 +770,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 696.0, 291.0, 26.0, 24.0 ],
+									"patching_rect" : [ 459.0, 402.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -775,7 +786,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 916.5, 291.0, 131.0, 25.0 ],
+									"patching_rect" : [ 679.5, 402.0, 131.0, 25.0 ],
 									"text" : "join a server"
 								}
 
@@ -787,7 +798,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 736.5, 291.0, 178.0, 23.0 ],
+									"patching_rect" : [ 499.5, 402.0, 178.0, 23.0 ],
 									"text" : "address http://127.0.0.1:5000"
 								}
 
@@ -801,7 +812,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 889.5, 336.0, 131.0, 25.0 ],
+									"patching_rect" : [ 652.5, 447.0, 131.0, 25.0 ],
 									"text" : "join a room"
 								}
 
@@ -813,8 +824,20 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 736.5, 336.0, 151.0, 23.0 ],
+									"patching_rect" : [ 499.5, 447.0, 151.0, 23.0 ],
 									"text" : "roomName myDictRoom"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 475.5, 91.5, 225.5, 51.0 ],
+									"text" : "Packing data with dict will ensure your data preserves type. Avoiding string/symbol only communication"
 								}
 
 							}
@@ -825,7 +848,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 59.0, 99.0, 303.0, 36.0 ],
+									"patching_rect" : [ 59.0, 99.0, 306.0, 36.0 ],
 									"text" : "Using Dict to pack data, it is possible to send entire max native dictionaries through CidLink"
 								}
 
@@ -931,6 +954,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-35", 0 ]
 								}
@@ -940,6 +970,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-40", 0 ]
 								}
 
 							}
@@ -974,7 +1011,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
+									"destination" : [ "obj-32", 0 ],
 									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
@@ -1047,7 +1084,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 809.0, 468.0 ],
+						"rect" : [ 100.0, 111.0, 1201.0, 894.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -1339,8 +1376,8 @@
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 404.0, 338.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
@@ -1461,7 +1498,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 809.0, 468.0 ],
+						"rect" : [ 0.0, 26.0, 1201.0, 894.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1524,13 +1561,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "helpargs.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "maxSocketIOClient.js",
+				"name" : "CidLinkMaxClient.js",
 				"bootpath" : "~/Documents/Max 8/Packages/CidLinkMax/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
