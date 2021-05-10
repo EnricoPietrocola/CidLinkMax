@@ -12,8 +12,8 @@ let roomName;
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
 
-const dictIdIn = "LinkMessageIn";
-const dictIdOut = "LinkMessageOut";
+let dictIdIn = "LinkMessageIn";
+let dictIdOut = "LinkMessageOut";
 
 //ioClient.emit('echo', 'hi');
 
@@ -38,6 +38,11 @@ Max.addHandler("send", (msg) => {
     ioClient.emit("datachannel", roomName, msg);
 });
 
+Max.addHandler("setDictionary", (msg) => {
+    Max.post(msg + " dictionary set");
+    dictIdOut = msg
+});
+
 ioClient.on('datachannel', (msg)=> {
     console.log("DEBUG received " + msg)
     Max.setDict(dictIdIn, msg)
@@ -56,9 +61,6 @@ ioClient.on("disconnect", (msg)=> {
     Max.post("disconnected")
     Max.outlet("disconnected")
 })
-
-
-
 
 Max.addHandler("bang", () => {
     /*Max.getDict("LinkMessage").then((result)=> {
