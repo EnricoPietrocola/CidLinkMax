@@ -47,8 +47,13 @@ Max.addHandler("setDictionary", (msg) => {
 
 ioClient.on('datachannel', (msg)=> {
     console.log("DEBUG received " + msg)
+    Max.post(msg)
+    Max.outlet(msg)
     Max.setDict(dictIdIn, msg)
+})
 
+ioClient.on('systemchannel', (msg)=> {
+    Max.post(msg)
     Max.outlet(msg)
 })
 
