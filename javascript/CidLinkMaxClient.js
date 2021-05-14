@@ -4,11 +4,13 @@ const Max = require('max-api');
 
 const io = require("socket.io-client");
 
-let address = "http://116.203.114.204:5000";
+let address = "http://127.0.0.1:5000";
+//let address = "http://116.203.114.204:5000";
 let ioClient = io.connect(address);
 //let ioClient = io.connect("http://127.0.0.1:5000");
 
 let roomName;
+let password = "pwd";
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
 
@@ -19,7 +21,7 @@ let dictIdOut = "LinkMessageOut";
 
 Max.addHandler("roomName", (msg)=> {
     roomName = msg;
-    ioClient.emit('join', roomName)
+    ioClient.emit('join', roomName, password)
 })
 
 Max.addHandler("address", (msg)=> {
