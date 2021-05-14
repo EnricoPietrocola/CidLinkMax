@@ -18,10 +18,10 @@
   "homepage": "https://github.com/EnricoPietrocola/CidSocketServer#readme",
   "devDependencies": {
     "max-api-or-not": "^1.2.0",
-    "socket.io": "^4.1.1",
-    "socket.io-client": "^4.1.1"
+    "socket.io": "^4.1.1"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io-client": "^4.1.1"
   }
 }
