@@ -4,8 +4,8 @@ const Max = require('max-api');
 
 const io = require("socket.io-client");
 
-//let address = "http://127.0.0.1:5000";
-let address = "http://116.203.114.204:5000";
+let address = "http://127.0.0.1:5000";
+//let address = "http://116.203.114.204:5000";
 let ioClient = io.connect(address);
 //let ioClient = io.connect("http://127.0.0.1:5000");
 
@@ -49,7 +49,7 @@ ioClient.on('datachannel', (msg)=> {
     console.log("DEBUG received " + msg)
     Max.post(msg)
     Max.outlet(msg)
-    Max.setDict(dictIdIn, msg)
+    //Max.setDict(dictIdIn, msg)
 })
 
 ioClient.on('systemchannel', (msg)=> {
