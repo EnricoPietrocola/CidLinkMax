@@ -50,10 +50,16 @@ Max.addHandler("setDictionary", (msg) => {
 });
 
 ioClient.on('datachannel', (msg)=> {
-    console.log("DEBUG received " + msg)
-    Max.post(msg)
+    //console.log("DEBUG received " + msg)
+    //Max.post(msg)
     Max.outlet(msg)
-    //Max.setDict(dictIdIn, msg)
+
+})
+
+ioClient.on('objchannel', (msg)=> {
+    //Max.post("set dict " + msg)
+    Max.setDict(dictIdIn, msg)
+    Max.outlet("bang")
 })
 
 ioClient.on('systemchannel', (msg)=> {
@@ -79,7 +85,7 @@ Max.addHandler("bang", () => {
 
     })*/
     getLinkDict().then(r =>{
-        ioClient.emit("datachannel", roomName, r);
+        ioClient.emit("objchannel", roomName, r);
     })
 });
 
