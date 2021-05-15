@@ -10,7 +10,7 @@ let ioClient = io.connect(address);
 //let ioClient = io.connect("http://127.0.0.1:5000");
 
 let roomName;
-let password = "pwdd";
+let password = "";
 // This will be printed directly to the Max console
 Max.post(`Loaded the ${path.basename(__filename)} script`);
 
