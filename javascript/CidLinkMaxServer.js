@@ -52,26 +52,41 @@ try {
 io.on('connection', (socket) => {
     console.log("new websocket connection")
 
-    socket.on('join', (roomName) => {
+    socket.on('join', (roomName, password) => {
         socket.join(roomName)
         totalConnections++
-        rooms.addRoom(roomName, '')
+        const room = rooms.addRoom(roomName, password)
 
-        if (rooms.getRoomURL(roomName) !== '') {
-
-            console.log('Sending room url to client ' + rooms.getRoomURL(roomName) + ' on page ' + rooms.findRoomByName(roomName).currentPage)
-        } else {
-            //console.log('Room Url not set')
+        if(room.password === password || room.password === ""){
+            room.allowedList.indexOf(socket.id) === -1 ? room.allowedList.push(socket.id) : console.log("This item already exists");
+            console.log(room.allowedList)
+            socket.to(roomName).emit('datachannel', 'A new user joined the room')
         }
-        socket.to(roomName).emit('datachannel', 'A new user joined the room')
+
     })
 
     socket.on('datachannel', (room, data) => {
-        console.log(room + " " + data)
-        if(isJson(data)){
-            console.log(room + " " + JSON.parse(data))
+        const requestedRoom = rooms.findRoomByName(room)
+        //if user is in allowed list, send data to others
+        if (requestedRoom != null) {
+            if (requestedRoom.allowedList.indexOf(socket.id) !== -1) {
+                socket.to(room).emit('datachannel', data)
+            } else {
+                socket.emit('systemchannel', 'Wrong Password')
+            }
         }
-        socket.to(room).emit('datachannel', data)
+    })
+
+    socket.on('objchannel', (room, data) => {
+        const requestedRoom = rooms.findRoomByName(room)
+        //if user is in allowed list, send data to others
+        if (requestedRoom != null) {
+            if (requestedRoom.allowedList.indexOf(socket.id) !== -1) {
+                socket.to(room).emit('objchannel', data)
+            } else {
+                socket.emit('systemchannel', 'Wrong Password')
+            }
+        }
     })
 
     socket.on('disconnecting', () => {
@@ -84,6 +99,7 @@ io.on('connection', (socket) => {
         io.emit('message', 'A user has left')
     })
 })
+
 
 
 function isJson(str) {
