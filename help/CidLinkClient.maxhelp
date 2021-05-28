@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 137.0, 108.0, 1201.0, 913.0 ],
+		"rect" : [ 100.0, 85.0, 1201.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1083,7 +1083,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 137.0, 134.0, 1201.0, 887.0 ],
+						"rect" : [ 100.0, 111.0, 1201.0, 887.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -1119,7 +1119,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 82.0, 400.0, 211.0, 156.0 ],
+									"patching_rect" : [ 82.0, 400.0, 214.0, 156.0 ],
 									"text" : "You can set a password to your room. This password will be set for the room if you are the first one opening/creating it, otherwise it will allow users to establish connection. A \"Wrong password\" message is received from server in case the password is wrong.\nTo hide it, you can encapsulate your message in a subpatcher."
 								}
 
@@ -1353,7 +1353,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 561.0, 27.0, 208.0, 141.0 ],
-									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\n\nSource code at:\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nSponsored by TempoReale\ntemporeale.it"
+									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\n\nSource code at:\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nWith the support of Tempo Reale\ntemporeale.it"
 								}
 
 							}
