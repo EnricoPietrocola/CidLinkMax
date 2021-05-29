@@ -1,13 +1,10 @@
-//this basic max client patch sends a message to the main server, which is then broadcast to all other users
 const path = require('path');
 const Max = require('max-api');
 
 const io = require("socket.io-client");
 
 let address = "http://127.0.0.1:5000";
-//let address = "http://116.203.114.204:5000";
 let ioClient = io.connect(address);
-//let ioClient = io.connect("http://127.0.0.1:5000");
 
 let roomName;
 let password = "";
@@ -17,92 +14,86 @@ Max.post(`Loaded the ${path.basename(__filename)} script`);
 let dictIdIn = "LinkMessageIn";
 let dictIdOut = "LinkMessageOut";
 
-//ioClient.emit('echo', 'hi');
+makeClient()
 
-Max.addHandler("roomName", (msg)=> {
-    roomName = msg;
-    ioClient.emit('join', roomName, password)
-})
+function makeClient() {
 
-Max.addHandler("password", (msg)=> {
-    password = msg
-})
+    Max.addHandler("roomName", (msg) => {
+        roomName = msg;
+        ioClient.emit('join', roomName, password)
+    })
 
-Max.addHandler("address", (msg)=> {
-    address = msg
-    ioClient.disconnect()
-    ioClient = io.connect(address);
-})
+    Max.addHandler("password", (msg) => {
+        password = msg
+    })
 
-/*ioClient.on("disconnect", ()=> {
-    ioClient.connect(msg)
-    }
-)*/
+    Max.addHandler("address", (msg) => {
+        address = msg
+        //ioClient = io.disconnect()
+        ioClient = io.connect(null, {'force new connection': false}); //disconnect, io.disconnect() is been buggy for long in the history of socketio apparently
+        ioClient = io.connect(address)
+        makeClient()
+    })
 
-Max.addHandler("send", (msg) => {
-    //Max.post(msg);
-    ioClient.emit("datachannel", roomName, msg);
-});
+    Max.addHandler("send", (msg) => {
+        //Max.post(msg);
+        ioClient.emit("datachannel", roomName, msg);
+    });
 
-Max.addHandler("setDictionary", (msg) => {
-    Max.post(msg + " dictionary set");
-    dictIdOut = msg
-});
+    Max.addHandler("setDictionary", (msg) => {
+        Max.post(msg + " dictionary set");
+        dictIdOut = msg
+    });
 
-ioClient.on('datachannel', (msg)=> {
-    //console.log("DEBUG received " + msg)
-    //Max.post(msg)
-    Max.outlet(msg)
+    ioClient.on('datachannel', (msg) => {
+        Max.post(msg)
+        Max.outlet(msg)
 
-})
+    })
 
-ioClient.on('objchannel', (msg)=> {
-    //Max.post("set dict " + msg)
-    Max.setDict(dictIdIn, msg)
-    Max.outlet("bang")
-})
+    ioClient.on('objchannel', (msg) => {
+        Max.setDict(dictIdIn, msg)
+        Max.outlet("bang")
+    })
 
-ioClient.on('systemchannel', (msg)=> {
-    Max.post(msg)
-    Max.outlet(msg)
-})
+    ioClient.on('systemchannel', (msg) => {
+        Max.post(msg)
+        Max.outlet(msg)
+    })
 
-ioClient.on("disconnect", (msg)=> {
-    if (msg !== undefined && msg !== null) {
-        if (isJson(msg)) {
-            msg = JSON.parse(msg)
-        } else {
+    ioClient.on("disconnect", (msg) => {
+        if (msg !== undefined && msg !== null) {
+            if (isJson(msg)) {
+                msg = JSON.parse(msg)
+            } else {
 
+            }
+        }
+        Max.post("disconnected")
+        Max.outlet("disconnected")
+    })
+
+    Max.addHandler("bang", () => {
+        getLinkDict().then(r => {
+            ioClient.emit("objchannel", roomName, r);
+        })
+    });
+
+    async function getLinkDict() {
+        try {
+            // dict contains the dict's contents
+            return await Max.getDict(dictIdOut)
+        } catch (err) {
+            // handle Error here
         }
     }
-    Max.post("disconnected")
-    Max.outlet("disconnected")
-})
 
-Max.addHandler("bang", () => {
-    /*Max.getDict("LinkMessage").then((result)=> {
-        Max.outlet(result);
-
-    })*/
-    getLinkDict().then(r =>{
-        ioClient.emit("objchannel", roomName, r);
-    })
-});
-
-async function getLinkDict(){
-    try {
-        // dict contains the dict's contents
-        return await Max.getDict(dictIdOut)
-    } catch (err) {
-        // handle Error here
+    function isJson(str) {
+        try {
+            JSON.parse(str);
+        } catch (e) {
+            return false;
+        }
+        return true;
     }
-}
-
-function isJson(str) {
-    try {
-        JSON.parse(str);
-    } catch (e) {
-        return false;
-    }
-    return true;
 }

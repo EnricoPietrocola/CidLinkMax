@@ -6,8 +6,6 @@ const fs = require('fs');
 const socketio = require('socket.io')
 const rooms = require('./rooms.js')
 
-//const io = require('socket.io')(http);
-
 let httpsServer;
 let httpServer;
 let io;
@@ -51,6 +49,7 @@ try {
 
 io.on('connection', (socket) => {
     console.log("new websocket connection")
+    socket.emit('systemchannel', 'Connected')
 
     socket.on('join', (roomName, password) => {
         socket.join(roomName)
@@ -59,10 +58,8 @@ io.on('connection', (socket) => {
 
         if(room.password === password || room.password === ""){
             room.allowedList.indexOf(socket.id) === -1 ? room.allowedList.push(socket.id) : console.log("This item already exists");
-            console.log(room.allowedList)
             socket.to(roomName).emit('datachannel', 'A new user joined the room')
         }
-
     })
 
     socket.on('datachannel', (room, data) => {
@@ -71,6 +68,7 @@ io.on('connection', (socket) => {
         if (requestedRoom != null) {
             if (requestedRoom.allowedList.indexOf(socket.id) !== -1) {
                 socket.to(room).emit('datachannel', data)
+                console.log(data)
             } else {
                 socket.emit('systemchannel', 'Wrong Password')
             }
