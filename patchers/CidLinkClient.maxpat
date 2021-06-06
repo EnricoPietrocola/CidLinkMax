@@ -94,7 +94,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 218.0, 12.0, 30.0, 30.0 ]
 				}
 
@@ -354,7 +354,7 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "C:/Program Files/nodejs/node.exe",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
