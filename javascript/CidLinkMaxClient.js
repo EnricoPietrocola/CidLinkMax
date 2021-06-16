@@ -18,35 +18,8 @@ makeClient()
 
 function makeClient() {
 
-    Max.addHandler("roomName", (msg) => {
-        roomName = msg;
-        ioClient.emit('join', roomName, password)
-    })
-
-    Max.addHandler("password", (msg) => {
-        password = msg
-    })
-
-    Max.addHandler("address", (msg) => {
-        address = msg
-        //ioClient = io.disconnect()
-        ioClient = io.connect(null, {'force new connection': false}); //disconnect, io.disconnect() is been buggy for long in the history of socketio apparently
-        ioClient = io.connect(address)
-        makeClient()
-    })
-
-    Max.addHandler("send", (msg) => {
-        //Max.post(msg);
-        ioClient.emit("datachannel", roomName, msg);
-    });
-
-    Max.addHandler("setDictionary", (msg) => {
-        Max.post(msg + " dictionary set");
-        dictIdOut = msg
-    });
-
     ioClient.on('datachannel', (msg) => {
-        Max.post(msg)
+        //Max.post(msg)
         Max.outlet(msg)
 
     })
@@ -73,21 +46,6 @@ function makeClient() {
         Max.outlet("disconnected")
     })
 
-    Max.addHandler("bang", () => {
-        getLinkDict().then(r => {
-            ioClient.emit("objchannel", roomName, r);
-        })
-    });
-
-    async function getLinkDict() {
-        try {
-            // dict contains the dict's contents
-            return await Max.getDict(dictIdOut)
-        } catch (err) {
-            // handle Error here
-        }
-    }
-
     function isJson(str) {
         try {
             JSON.parse(str);
@@ -95,5 +53,53 @@ function makeClient() {
             return false;
         }
         return true;
+    }
+}
+
+Max.addHandler("roomName", (msg) => {
+    roomName = msg;
+    ioClient.emit('join', roomName, password)
+})
+
+Max.addHandler("password", (msg) => {
+    password = msg
+})
+
+Max.addHandler("address", (msg) => {
+    address = msg
+    //ioClient = io.disconnect()
+    roomName = null
+    ioClient.disconnect(roomName)
+    ioClient = io.connect(address)
+    makeClient()
+})
+
+Max.addHandler("send", (msg) => {
+    //Max.post(msg);
+    if(roomName == null){
+        Max.post("No room joined")
+    }
+    else {
+        ioClient.emit("datachannel", roomName, msg);
+    }
+});
+
+Max.addHandler("setDictionary", (msg) => {
+    Max.post(msg + " dictionary set");
+    dictIdOut = msg
+});
+
+Max.addHandler("bang", () => {
+    getLinkDict().then(r => {
+        ioClient.emit("objchannel", roomName, r);
+    })
+});
+
+async function getLinkDict() {
+    try {
+        // dict contains the dict's contents
+        return await Max.getDict(dictIdOut)
+    } catch (err) {
+        // handle Error here
     }
 }
