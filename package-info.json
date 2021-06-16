@@ -1,0 +1,24 @@
+{
+  "author" : "Enrico Pietrocola",
+  "description" : "A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks.",
+  "homepatcher" : "",
+  "max_version_min" : "8.0", "max_version_max" : "none",
+  "name" : "CidLink For Max",
+  "os" : {
+    "macintosh" : {
+      "platform" : [ "ia32", "x64" ],
+      "min_version" : "none"
+    },
+    "windows" : {
+      "platform" : [ "ia32", "x64" ],
+      "min_version" : "none"
+    }
+  },
+  "package_extra" : {
+    "reverse_domain" : "com.enricopietrocola",
+    "copyright" : "Copyright (c) 2021 Enrico Pietrocola"
+  },
+  "tags" : [ "cooperative", "distance", "remote", "interaction", "websocket", "connectivity", "socketio", "nodejs" ],
+  "version" : "0.1",
+  "website" : "http://www.enricopietrocola.com"
+}
