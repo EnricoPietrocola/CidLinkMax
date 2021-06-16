@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1422.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1422.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,9 +40,57 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 294.5, 35.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 382.5, 128.0, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 347.5, 98.0, 54.0, 22.0 ],
+					"text" : "sel done"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 294.5, 63.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-65",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -77,13 +125,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-53",
-					"linecount" : 3,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 609.5, 519.0, 50.0, 50.0 ],
-					"text" : "stdout \"yeye 70\""
+					"patching_rect" : [ 609.5, 519.0, 50.0, 105.0 ],
+					"text" : "stop success dictionary u460012679"
 				}
 
 			}
@@ -91,7 +139,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -108,7 +156,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 429.5, 519.0, 50.0, 36.0 ],
-					"presentation_linecount" : 2,
 					"text" : "disconnected"
 				}
 
@@ -117,7 +164,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -130,7 +177,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -172,7 +219,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 413.0, 207.5, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Use @autostart 1 when your script should start once you open the patch"
 				}
 
@@ -243,7 +289,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 404.5, 225.5, 150.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "The whole family of script control messages"
 				}
 
@@ -303,7 +348,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 456.0, 158.5, 65.0, 22.0 ],
+					"patching_rect" : [ 505.0, 158.5, 65.0, 22.0 ],
 					"text" : "script stop"
 				}
 
@@ -315,10 +360,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.0, 158.5, 66.0, 22.0 ],
+					"patching_rect" : [ 383.0, 158.5, 81.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 877.0, 134.5, 66.0, 22.0 ],
-					"text" : "script start"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 877.0, 134.5, 66.0, 36.0 ],
+					"text" : "script start $1"
 				}
 
 			}
@@ -332,6 +378,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 383.0, 384.0, 309.0, 22.0 ],
 					"saved_object_attributes" : 					{
+						"args" : [ 6666 ],
 						"autostart" : 1,
 						"defer" : 0,
 						"node_bin_path" : "",
@@ -416,8 +463,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 465.5, 198.5, 392.5, 198.5 ],
+					"midpoints" : [ 514.5, 198.5, 392.5, 198.5 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -440,9 +501,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"midpoints" : [ 414.0, 316.0, 392.5, 316.0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -490,34 +565,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "CidLinkMaxServer.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLinkMax/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
