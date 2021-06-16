@@ -12,12 +12,12 @@ let httpServer;
 let io;
 
 const args = process.argv.slice(2)
-Max.post(args[0]) //remove when completed
 const key = args[1]
 const cert = args[2]
 const ca = args[3]
 let domain = args[4]
 
+Max.post(args[0]) //remove when completed
 let PORT = args[0]
 
 // testing homepage

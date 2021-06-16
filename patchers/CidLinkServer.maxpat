@@ -125,13 +125,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-53",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 609.5, 519.0, 50.0, 105.0 ],
-					"text" : "stop success dictionary u460012679"
+					"patching_rect" : [ 609.5, 519.0, 61.0, 91.0 ],
+					"text" : "stdout \"new websocket connection\""
 				}
 
 			}
@@ -363,7 +363,7 @@
 					"patching_rect" : [ 383.0, 158.5, 81.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 877.0, 134.5, 66.0, 36.0 ],
+					"presentation_rect" : [ 877.0, 134.5, 67.0, 36.0 ],
 					"text" : "script start $1"
 				}
 
@@ -376,9 +376,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 383.0, 384.0, 309.0, 22.0 ],
+					"patching_rect" : [ 383.0, 384.0, 378.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"args" : [ 6666 ],
+						"args" : [ 5000 ],
 						"autostart" : 1,
 						"defer" : 0,
 						"node_bin_path" : "",
@@ -386,7 +386,7 @@
 						"watch" : 1
 					}
 ,
-					"text" : "node.script CidLinkMaxServer.js @autostart 1 @watch 1"
+					"text" : "node.script CidLinkMaxServer.js @autostart 1 @watch 1 @args 5000"
 				}
 
 			}
