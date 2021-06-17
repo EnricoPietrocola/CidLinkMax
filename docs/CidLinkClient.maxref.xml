@@ -50,6 +50,28 @@
 
     <!--MESSAGES-->
     <methodlist>
+        <method name="bang">
+            <!--<arglist>
+                <arg name="parameter-settings" optional="0" type="float" />
+            </arglist>-->
+            <digest>
+                Sends dict content as JSON object
+            </digest>
+            <description>
+                If a dict is set as dictIn, this message will send the dict content to the Cid infrastructure as JSON object.
+            </description>
+        </method>
+        <method name="setDictionary">
+            <!--<arglist>
+                <arg name="parameter-settings" optional="0" type="float" />
+            </arglist>-->
+            <digest>
+                Sets dict as data to be sent
+            </digest>
+            <description>
+                This allows you to pack multiple messages and data at once and send them all together as a single JSON object.
+            </description>
+        </method>
         <method name="address">
         <!--<arglist>
             <arg name="parameter-settings" optional="0" type="float" />
@@ -78,6 +100,15 @@
             </digest>
             <description>
                 This password must be set before joining a room. If the room you join did not exist, having a password set will require all users to set the same password to establish communication. For privacy, it is better to create this message and then hide it in a subpatcher.
+            </description>
+        </method>
+        <method name="send">
+            <arglist />
+            <digest>
+                Sends data, equivalent to using the right inlet
+            </digest>
+            <description>
+                Sends data, equivalent to using the right inlet
             </description>
         </method>
 </methodlist>
