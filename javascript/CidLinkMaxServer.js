@@ -17,7 +17,6 @@ const cert = args[2]
 const ca = args[3]
 let domain = args[4]
 
-Max.post(args[0]) //remove when completed
 let PORT = args[0]
 
 // testing homepage
