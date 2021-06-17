@@ -1,7 +1,7 @@
 {
   "author" : "Enrico Pietrocola",
   "description" : "A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks.",
-  "homepatcher" : "",
+  "homepatcher" : "CidLink.maxpat",
   "max_version_min" : "8.0", "max_version_max" : "none",
   "name" : "CidLink For Max",
   "os" : {
