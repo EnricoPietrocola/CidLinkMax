@@ -76,7 +76,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 139.0, 235.5, 131.0, 40.0 ],
-					"presentation_linecount" : 2,
 					"text" : "join a server and a room"
 				}
 
