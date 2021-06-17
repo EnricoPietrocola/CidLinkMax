@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="CidLinkClient">
+
+    <digest>
+        Send messages to a Cid network infrastructure
+    </digest>
+
+    <description>
+        Description TODO
+    </description>
+
+    <!--METADATA-->
+    <metadatalist>
+        <metadata name="author">Enrico Pietrocola</metadata>
+        <metadata name="tag">CidLink</metadata>
+        <metadata name="tag">Network</metadata>
+        <metadata name="tag">NodeJS</metadata>
+        <metadata name="tag">64-bit</metadata>
+    </metadatalist>
+
+    <!--INLETS-->
+    <inletlist>
+        <inlet id="0" type="float">
+            <digest>Inlet info 1.</digest>
+        </inlet>
+        <inlet id="1" type="float">
+            <digest>Inlet info 2.</digest>
+            <description>Inlet description 2.</description>
+        </inlet>
+    </inletlist>
+
+    <!--OUTLETS-->
+    <outletlist>
+        <outlet id="0" type="float">
+            <digest>Outlet info 1.</digest>
+        </outlet>
+        <outlet id="1" type="float">
+            <digest>Outlet info 2.</digest>
+        </outlet>
+    </outletlist>
+
+    <!--ARGUMENTS-->
+    <!--<objarglist>
+        <objarg name="pan-position" optional="1" type="float">
+            <digest>Initial panning position, default is 0.</digest>
+        </objarg>
+    </objarglist>-->
+
+    <!--MESSAGES-->
+    <methodlist>
+        <method name="address">
+        <!--<arglist>
+            <arg name="parameter-settings" optional="0" type="float" />
+        </arglist>-->
+            <digest>
+                Connect to given http://address:port
+            </digest>
+            <description>
+                Specify the address and port of the Cid Link server you want to connect with. You will need to include http:// and a :port to your address.
+                If you server is local it would be something like http://127.0.0.1:5000, where http:// is the protocol used to establish connection, 127.0.0.1 is the internal ip of your machine, and 5000 is the port your server is listening to
+            </description>
+        </method>
+        <method name="roomName">
+            <arglist />
+            <digest>
+                Create or join a room on the connected server
+            </digest>
+            <description>
+                After you connect to a server you need to join a room. This message creates one if none with the given name is provided.
+            </description>
+        </method>
+        <method name="password">
+            <arglist />
+            <digest>
+                Set a password
+            </digest>
+            <description>
+                This password must be set before joining a room. If the room you join did not exist, having a password set will require all users to set the same password to establish communication. For privacy, it is better to create this message and then hide it in a subpatcher.
+            </description>
+        </method>
+</methodlist>
+
+
+<!--SEEALSO-->
+    <seealsolist>
+        <seealso name="CidLinkServer"/>
+    </seealsolist>
+
+</c74object>
