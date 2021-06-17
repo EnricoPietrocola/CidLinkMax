@@ -121,12 +121,25 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-10",
-									"linecount" : 5,
+									"id" : "obj-7",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 66.0, 211.0, 258.0, 81.0 ],
+									"patching_rect" : [ 38.0, 258.0, 301.0, 51.0 ],
+									"text" : "SSL and https are present in the package (you will need to pass the certificates as argument but it has not yet been tested in Max"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"id" : "obj-10",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 38.0, 151.0, 478.0, 51.0 ],
 									"text" : "You can visit address:port (e.g. 127.0.0.1:7777 from your browser of choice to check wheter your server is up and reachable. If it is up you will display a \"Server is up\" webpage"
 								}
 
@@ -134,11 +147,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 119.5, 340.0, 562.0, 81.0 ],
+									"patching_rect" : [ 36.0, 360.0, 730.0, 66.0 ],
 									"text" : "Opening a server to the internet usually needs some configuration. While Cid Link offers an easy procedure to host one, you might still need to manage rules on your firewall, portforward your connection on your router or more.\nFeel free to contact me to enricopietrocola@gmail.com for info or discuss custom solutions and  technical support for productions."
 								}
 
@@ -150,7 +163,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 471.0, 227.0, 293.0, 36.0 ],
+									"patching_rect" : [ 452.0, 226.0, 293.0, 36.0 ],
 									"text" : "Use the argument @<number> to define the port your server will listen"
 								}
 
@@ -161,7 +174,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 448.0, 273.0, 141.0, 23.0 ],
+									"patching_rect" : [ 429.0, 272.0, 141.0, 23.0 ],
 									"text" : "print CidLinkServer-log"
 								}
 
@@ -173,7 +186,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 331.0, 227.0, 136.0, 23.0 ],
+									"patching_rect" : [ 312.0, 226.0, 136.0, 23.0 ],
 									"text" : "CidLinkServer @7777"
 								}
 
@@ -187,7 +200,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 550.5, 305.0, 242.0, 25.0 ],
+									"patching_rect" : [ 531.5, 304.0, 242.0, 25.0 ],
 									"text" : "monitor traffic"
 								}
 
@@ -198,7 +211,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 389.5, 305.0, 159.0, 23.0 ],
+									"patching_rect" : [ 370.5, 304.0, 159.0, 23.0 ],
 									"text" : "print CidLinkServer-stdout"
 								}
 
@@ -210,7 +223,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.0, 27.0, 208.0, 141.0 ],
+									"patching_rect" : [ 542.0, 26.0, 208.0, 141.0 ],
 									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\nenricopietrocola.com/software\n\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nWith the support of Tempo Reale\ntemporeale.it"
 								}
 
@@ -223,7 +236,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 91.0, 478.0, 36.0 ],
+									"patching_rect" : [ 38.0, 90.0, 478.0, 36.0 ],
 									"text" : "A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks."
 								}
 
@@ -235,7 +248,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 27.0, 358.0, 62.0 ],
+									"patching_rect" : [ 36.0, 26.0, 358.0, 62.0 ],
 									"text" : "CidLinkServer"
 								}
 
