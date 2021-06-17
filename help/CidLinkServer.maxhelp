@@ -139,7 +139,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 38.0, 151.0, 478.0, 51.0 ],
+									"patching_rect" : [ 38.0, 151.0, 488.0, 51.0 ],
 									"text" : "You can visit address:port (e.g. 127.0.0.1:7777 from your browser of choice to check wheter your server is up and reachable. If it is up you will display a \"Server is up\" webpage"
 								}
 
@@ -159,12 +159,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 452.0, 226.0, 293.0, 36.0 ],
-									"text" : "Use the argument @<number> to define the port your server will listen"
+									"patching_rect" : [ 451.0, 217.5, 315.0, 51.0 ],
+									"text" : "Use the argument @<number> to define the port your server will listen. You cannot have two servers listening to the same port on the same computer"
 								}
 
 							}
