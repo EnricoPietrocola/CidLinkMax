@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -84,7 +84,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -138,7 +138,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 119.5, 340.0, 559.0, 81.0 ],
+									"patching_rect" : [ 119.5, 340.0, 562.0, 81.0 ],
 									"text" : "Opening a server to the internet usually needs some configuration. While Cid Link offers an easy procedure to host one, you might still need to manage rules on your firewall, portforward your connection on your router or more.\nFeel free to contact me to enricopietrocola@gmail.com for info or discuss custom solutions and  technical support for productions."
 								}
 
@@ -150,7 +150,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 471.0, 227.0, 290.0, 36.0 ],
+									"patching_rect" : [ 471.0, 227.0, 293.0, 36.0 ],
 									"text" : "Use the argument @<number> to define the port your server will listen"
 								}
 
@@ -211,7 +211,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 561.0, 27.0, 208.0, 141.0 ],
-									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\nenricopietrocola.com/software\n\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nWith the help of Tempo Reale\ntemporeale.it"
+									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\nenricopietrocola.com/software\n\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nWith the support of Tempo Reale\ntemporeale.it"
 								}
 
 							}
@@ -283,7 +283,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
