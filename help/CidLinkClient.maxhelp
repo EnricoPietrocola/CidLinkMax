@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -93,7 +93,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 194.0, 489.0, 51.0 ],
+									"patching_rect" : [ 57.0, 194.0, 490.0, 51.0 ],
 									"text" : "I am available for hire for custom solutions and technical support in case you would like to adopt Cid Link in your environment or for your production. Feel free to contact me at enricopietrocola@gmail.com"
 								}
 
@@ -351,7 +351,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 91.0, 490.0, 96.0 ],
+									"patching_rect" : [ 57.0, 91.0, 494.0, 96.0 ],
 									"text" : "CidLink has a self hosted test server available for testing. \nAt the moment this server instance is not reliable and available only for testing purposes, please consider using it only for getting a deeper understanding of how CidLink works and make sure to host your own instance for production purposes, all files and documents are available on github https://github.com/EnricoPietrocola/CidLinkServer."
 								}
 
@@ -453,7 +453,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -595,7 +595,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 561.25, 384.0, 89.0, 23.0 ],
-									"text" : "dictionary"
+									"text" : "Connected"
 								}
 
 							}
@@ -1090,7 +1090,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1196,13 +1196,14 @@
 							}
 , 							{
 								"box" : 								{
+									"fontface" : 1,
 									"id" : "obj-41",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 79.0, 149.0, 216.0, 36.0 ],
-									"text" : "Make sure your arress is including http:// and a :<port>"
+									"patching_rect" : [ 79.0, 149.0, 190.0, 51.0 ],
+									"text" : "Make sure your address is including http:// and a :<port>"
 								}
 
 							}
@@ -1538,7 +1539,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
