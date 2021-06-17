@@ -8,7 +8,8 @@
     </digest>
 
     <description>
-        Description TODO
+        Client object of Cid Link for Max.
+        A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks.
     </description>
 
     <!--METADATA-->
@@ -22,10 +23,10 @@
 
     <!--INLETS-->
     <inletlist>
-        <inlet id="0" type="float">
+        <inlet id="0" type="message">
             <digest>Inlet info 1.</digest>
         </inlet>
-        <inlet id="1" type="float">
+        <inlet id="1" type="message">
             <digest>Inlet info 2.</digest>
             <description>Inlet description 2.</description>
         </inlet>
@@ -33,10 +34,10 @@
 
     <!--OUTLETS-->
     <outletlist>
-        <outlet id="0" type="float">
+        <outlet id="0" type="message">
             <digest>Outlet info 1.</digest>
         </outlet>
-        <outlet id="1" type="float">
+        <outlet id="1" type="message">
             <digest>Outlet info 2.</digest>
         </outlet>
     </outletlist>
