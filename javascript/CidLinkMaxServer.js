@@ -47,7 +47,7 @@ io.on('connection', (socket) => {
         if (requestedRoom != null) {
             if (requestedRoom.allowedList.indexOf(socket.id) !== -1) {
                 socket.to(room).emit('datachannel', data)
-                console.log(data)
+                //console.log(data)
             } else {
                 socket.emit('systemchannel', 'Wrong Password')
             }
@@ -91,9 +91,9 @@ function createServer(){
                 //ca: fs.readFileSync(ca, 'utf8') //hide this if your ssl keys don't include ca
             }, app).listen(443)
             io = socketio(httpsServer)
-            console.log('SSL certificates set. Starting https server')
+            Max.post('SSL certificates set. Starting https server')
         } else {
-            console.log('SSL certificates absent. Starting http server')
+            Max.post('SSL certificates absent. Starting http server')
             httpServer = http.createServer(app);
             io = socketio(httpServer)
             httpServer.listen(PORT)
