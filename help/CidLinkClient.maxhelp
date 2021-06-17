@@ -459,7 +459,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 787.0, 588.0 ],
+						"rect" : [ 100.0, 111.0, 787.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -842,12 +842,13 @@
 							}
 , 							{
 								"box" : 								{
+									"fontface" : 1,
 									"id" : "obj-22",
 									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 475.5, 91.5, 225.5, 51.0 ],
+									"patching_rect" : [ 475.5, 91.5, 244.0, 51.0 ],
 									"text" : "Packing data with dict will ensure your data preserves type. Avoiding string/symbol only communication"
 								}
 
@@ -860,7 +861,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 59.0, 99.0, 306.0, 36.0 ],
-									"text" : "Using Dict to pack data, it is possible to send entire max native dictionaries through CidLink"
+									"text" : "Using Dict to pack data, it is possible to send entire max native dictionaries (dict JSON) through CidLink"
 								}
 
 							}
@@ -1096,7 +1097,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 111.0, 787.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 787.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
