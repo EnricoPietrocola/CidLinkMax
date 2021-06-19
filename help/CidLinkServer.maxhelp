@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 809.0, 494.0 ],
+		"rect" : [ 525.0, 145.0, 809.0, 494.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -90,7 +90,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 809.0, 468.0 ],
+						"rect" : [ 525.0, 171.0, 809.0, 468.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -139,7 +139,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 38.0, 151.0, 488.0, 51.0 ],
+									"patching_rect" : [ 38.0, 151.0, 491.0, 51.0 ],
 									"text" : "You can visit address:port (e.g. 127.0.0.1:7777 from your browser of choice to check wheter your server is up and reachable. If it is up you will display a \"Server is up\" webpage"
 								}
 
@@ -170,22 +170,11 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 429.0, 272.0, 141.0, 23.0 ],
-									"text" : "print CidLinkServer-log"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 312.0, 226.0, 136.0, 23.0 ],
 									"text" : "CidLinkServer @7777"
 								}
@@ -200,8 +189,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 531.5, 304.0, 242.0, 25.0 ],
-									"text" : "monitor traffic"
+									"patching_rect" : [ 498.5, 304.0, 242.0, 25.0 ],
+									"text" : "monitor process"
 								}
 
 							}
@@ -211,8 +200,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 370.5, 304.0, 159.0, 23.0 ],
-									"text" : "print CidLinkServer-stdout"
+									"patching_rect" : [ 370.5, 304.0, 126.0, 23.0 ],
+									"text" : "print processMonitor"
 								}
 
 							}
@@ -255,13 +244,6 @@
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-1", 2 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
 									"source" : [ "obj-1", 1 ]
