@@ -1131,12 +1131,23 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 420.0, 352.0, 126.0, 23.0 ],
+									"text" : "print processMonitor"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-9",
-									"linecount" : 7,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 380.0, 330.0, 111.0 ],
+									"patching_rect" : [ 22.0, 422.0, 654.0, 66.0 ],
 									"text" : "You can set a password to your room. This password will be set for the room if you are the first one opening/creating it, otherwise it will allow users to establish connection. A \"Wrong password\" message is received from server in case the password is wrong.\nTo hide it, you can encapsulate your message in a subpatcher."
 								}
 
@@ -1166,7 +1177,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 322.0, 354.0, 26.0, 24.0 ],
+									"patching_rect" : [ 326.0, 388.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1182,7 +1193,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 469.0, 354.0, 242.0, 25.0 ],
+									"patching_rect" : [ 469.0, 388.0, 242.0, 25.0 ],
 									"text" : "receive messages from other users"
 								}
 
@@ -1193,7 +1204,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 354.0, 355.0, 114.0, 23.0 ],
+									"patching_rect" : [ 354.0, 389.0, 114.0, 23.0 ],
 									"text" : "print CidLinkClient"
 								}
 
@@ -1498,6 +1509,13 @@
 									"destination" : [ "obj-5", 0 ],
 									"midpoints" : [ 41.5, 372.0, 18.0, 372.0, 18.0, 312.0, 363.5, 312.0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-5", 1 ]
 								}
 
 							}
