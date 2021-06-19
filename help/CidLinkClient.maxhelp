@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 85.0, 787.0, 614.0 ],
+		"rect" : [ 100.0, 85.0, 708.0, 614.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 787.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -93,8 +93,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 194.0, 490.0, 51.0 ],
-									"text" : "I am available for hire for custom solutions and technical support in case you would like to adopt Cid Link in your environment or for your production. Feel free to contact me at enricopietrocola@gmail.com"
+									"patching_rect" : [ 11.0, 174.0, 490.0, 51.0 ],
+									"text" : "Custom solutions and technical support is possible in case you would like to adopt Cid Link in your environment or for your production. Feel free to contact me at enricopietrocola@gmail.com"
 								}
 
 							}
@@ -105,7 +105,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.0, 301.0, 219.0, 23.0 ],
+									"patching_rect" : [ 35.0, 262.0, 219.0, 23.0 ],
 									"text" : "address http://116.203.114.204:5000"
 								}
 
@@ -123,7 +123,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 366.0, 478.0, 26.0, 24.0 ],
+									"patching_rect" : [ 342.0, 439.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -136,10 +136,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-45",
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 513.0, 478.0, 238.0, 25.0 ],
+									"patching_rect" : [ 493.0, 416.5, 105.0, 70.0 ],
 									"text" : "receive messages from other users"
 								}
 
@@ -150,7 +151,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 398.0, 479.0, 114.0, 23.0 ],
+									"patching_rect" : [ 374.0, 440.0, 114.0, 23.0 ],
 									"text" : "print CidLinkClient"
 								}
 
@@ -168,7 +169,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 392.0, 271.0, 26.0, 24.0 ],
+									"patching_rect" : [ 368.0, 232.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -188,7 +189,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 31.0, 374.0, 26.0, 24.0 ],
+									"patching_rect" : [ 7.0, 335.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -208,7 +209,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 31.0, 301.0, 26.0, 24.0 ],
+									"patching_rect" : [ 7.0, 262.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -224,7 +225,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 271.0, 301.0, 103.0, 25.0 ],
+									"patching_rect" : [ 247.0, 262.0, 103.0, 25.0 ],
 									"text" : "join a server"
 								}
 
@@ -235,11 +236,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-32",
-									"linecount" : 2,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 513.0, 302.0, 207.0, 40.0 ],
+									"patching_rect" : [ 484.0, 232.0, 110.0, 85.0 ],
 									"text" : "send something to all connected clients to the room "
 								}
 
@@ -253,7 +254,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 211.0, 374.0, 98.0, 25.0 ],
+									"patching_rect" : [ 187.0, 335.0, 98.0, 25.0 ],
 									"text" : "join a room"
 								}
 
@@ -267,7 +268,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 417.0, 337.0, 50.0, 23.0 ]
+									"patching_rect" : [ 393.0, 298.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -278,7 +279,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 398.0, 302.0, 106.0, 23.0 ],
+									"patching_rect" : [ 374.0, 263.0, 106.0, 23.0 ],
 									"text" : "anythingyouwant"
 								}
 
@@ -290,7 +291,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 374.0, 128.0, 23.0 ],
+									"patching_rect" : [ 41.0, 335.0, 128.0, 23.0 ],
 									"text" : "roomName myRoom"
 								}
 
@@ -304,7 +305,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 534.0, 408.0, 50.0, 23.0 ]
+									"patching_rect" : [ 510.0, 369.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -315,7 +316,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 464.0, 408.0, 68.0, 23.0 ],
+									"patching_rect" : [ 440.0, 369.0, 68.0, 23.0 ],
 									"text" : "something"
 								}
 
@@ -327,7 +328,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 398.0, 374.0, 88.0, 23.0 ],
+									"patching_rect" : [ 374.0, 335.0, 88.0, 23.0 ],
 									"text" : "prepend send"
 								}
 
@@ -339,7 +340,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 398.0, 441.0, 85.0, 23.0 ],
+									"patching_rect" : [ 374.0, 402.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -351,7 +352,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 91.0, 494.0, 96.0 ],
+									"patching_rect" : [ 7.0, 65.0, 494.0, 96.0 ],
 									"text" : "CidLink has a self hosted test server available for testing. \nAt the moment this server instance is not reliable and available only for testing purposes, please consider using it only for getting a deeper understanding of how CidLink works and make sure to host your own instance for production purposes, all files and documents are available on github https://github.com/EnricoPietrocola/CidLinkServer."
 								}
 
@@ -363,7 +364,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 27.0, 301.0, 62.0 ],
+									"patching_rect" : [ 7.0, 7.0, 301.0, 62.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -459,7 +460,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 111.0, 787.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -495,7 +496,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 188.0, 486.0, 135.0, 23.0 ],
+									"patching_rect" : [ 144.0, 437.0, 135.0, 23.0 ],
 									"text" : "prepend setDictionary"
 								}
 
@@ -507,7 +508,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 188.0, 455.0, 97.0, 23.0 ],
+									"patching_rect" : [ 144.0, 406.0, 97.0, 23.0 ],
 									"text" : "route dictionary"
 								}
 
@@ -525,7 +526,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 110.0, 170.0, 26.0, 24.0 ],
+									"patching_rect" : [ 66.0, 121.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -542,7 +543,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 138.0, 170.0, 135.0, 55.0 ],
+									"patching_rect" : [ 94.0, 121.0, 135.0, 55.0 ],
 									"text" : "data added to a dict will be sent as a JSON object"
 								}
 
@@ -553,7 +554,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 411.75, 465.0, 100.0, 100.0 ]
+									"patching_rect" : [ 297.75, 426.0, 100.0, 100.0 ]
 								}
 
 							}
@@ -564,7 +565,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 411.75, 431.0, 120.0, 23.0 ],
+									"patching_rect" : [ 297.75, 392.0, 120.0, 23.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -583,7 +584,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 529.75, 384.0, 24.0, 24.0 ]
+									"patching_rect" : [ 415.75, 345.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -594,7 +595,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 561.25, 384.0, 89.0, 23.0 ],
+									"patching_rect" : [ 447.25, 345.0, 89.0, 23.0 ],
 									"text" : "Connected"
 								}
 
@@ -606,7 +607,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 412.75, 384.0, 23.0, 23.0 ],
+									"patching_rect" : [ 298.75, 345.0, 23.0, 23.0 ],
 									"text" : "t b"
 								}
 
@@ -619,7 +620,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 412.75, 255.0, 24.0, 24.0 ]
+									"patching_rect" : [ 298.75, 216.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -630,7 +631,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 412.75, 339.0, 85.0, 23.0 ],
+									"patching_rect" : [ 298.75, 300.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -642,7 +643,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 170.0, 265.0, 78.0, 23.0 ],
+									"patching_rect" : [ 126.0, 216.0, 78.0, 23.0 ],
 									"text" : "random 100"
 								}
 
@@ -653,7 +654,7 @@
 									"maxclass" : "dict.view",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 76.0, 479.0, 100.0, 100.0 ]
+									"patching_rect" : [ 32.0, 430.0, 100.0, 100.0 ]
 								}
 
 							}
@@ -665,7 +666,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 76.0, 170.0, 24.0, 24.0 ]
+									"patching_rect" : [ 32.0, 121.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -677,7 +678,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 170.0, 293.0, 50.0, 23.0 ]
+									"patching_rect" : [ 126.0, 244.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -688,7 +689,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "bang" ],
-									"patching_rect" : [ 76.0, 212.0, 45.0, 23.0 ],
+									"patching_rect" : [ 32.0, 163.0, 45.0, 23.0 ],
 									"text" : "t b b b"
 								}
 
@@ -700,7 +701,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.0, 290.0, 37.0, 23.0 ],
+									"patching_rect" : [ 66.0, 241.0, 37.0, 23.0 ],
 									"text" : "/msg"
 								}
 
@@ -712,7 +713,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.0, 332.0, 53.0, 23.0 ],
+									"patching_rect" : [ 66.0, 283.0, 53.0, 23.0 ],
 									"text" : "pack s i"
 								}
 
@@ -724,7 +725,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 110.0, 359.0, 77.0, 23.0 ],
+									"patching_rect" : [ 66.0, 310.0, 77.0, 23.0 ],
 									"text" : "prepend set"
 								}
 
@@ -736,7 +737,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 76.0, 409.0, 130.0, 23.0 ],
+									"patching_rect" : [ 32.0, 360.0, 130.0, 23.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -761,7 +762,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 458.75, 258.0, 26.0, 24.0 ],
+									"patching_rect" : [ 344.75, 219.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -781,7 +782,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 458.75, 212.0, 26.0, 24.0 ],
+									"patching_rect" : [ 344.75, 173.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -794,10 +795,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-33",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 679.25, 212.0, 131.0, 25.0 ],
+									"patching_rect" : [ 565.25, 163.0, 65.0, 40.0 ],
 									"text" : "join a server"
 								}
 
@@ -809,7 +811,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.25, 212.0, 178.0, 23.0 ],
+									"patching_rect" : [ 385.25, 173.0, 178.0, 23.0 ],
 									"text" : "address http://127.0.0.1:5000"
 								}
 
@@ -820,10 +822,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-13",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 652.25, 257.0, 131.0, 25.0 ],
+									"patching_rect" : [ 538.25, 216.0, 60.0, 40.0 ],
 									"text" : "join a room"
 								}
 
@@ -835,7 +838,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 499.25, 257.0, 151.0, 23.0 ],
+									"patching_rect" : [ 385.25, 218.0, 151.0, 23.0 ],
 									"text" : "roomName myDictRoom"
 								}
 
@@ -848,7 +851,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 475.5, 91.5, 244.0, 51.0 ],
+									"patching_rect" : [ 332.5, 65.0, 244.0, 51.0 ],
 									"text" : "Packing data with dict will ensure your data preserves type. Avoiding string/symbol only communication"
 								}
 
@@ -860,7 +863,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 59.0, 99.0, 306.0, 36.0 ],
+									"patching_rect" : [ 11.0, 65.0, 306.0, 36.0 ],
 									"text" : "Using Dict to pack data, it is possible to send entire max native dictionaries (dict JSON) through CidLink"
 								}
 
@@ -872,7 +875,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 27.0, 301.0, 62.0 ],
+									"patching_rect" : [ 11.0, 8.0, 301.0, 62.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -988,7 +991,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"midpoints" : [ 197.5, 519.0, 381.0, 519.0, 381.0, 326.0, 422.25, 326.0 ],
+									"midpoints" : [ 153.5, 470.0, 286.0, 470.0, 286.0, 277.0, 308.25, 277.0 ],
 									"source" : [ "obj-40", 0 ]
 								}
 
@@ -1097,7 +1100,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 787.0, 588.0 ],
+						"rect" : [ 100.0, 111.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -1133,7 +1136,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 64.0, 401.0, 330.0, 111.0 ],
+									"patching_rect" : [ 22.0, 380.0, 330.0, 111.0 ],
 									"text" : "You can set a password to your room. This password will be set for the room if you are the first one opening/creating it, otherwise it will allow users to establish connection. A \"Wrong password\" message is received from server in case the password is wrong.\nTo hide it, you can encapsulate your message in a subpatcher."
 								}
 
@@ -1145,7 +1148,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 74.0, 368.0, 170.0, 23.0 ],
+									"patching_rect" : [ 32.0, 347.0, 170.0, 23.0 ],
 									"text" : "password yourpassword123"
 								}
 
@@ -1163,7 +1166,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 364.0, 375.0, 26.0, 24.0 ],
+									"patching_rect" : [ 322.0, 354.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1179,7 +1182,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 511.0, 375.0, 242.0, 25.0 ],
+									"patching_rect" : [ 469.0, 354.0, 242.0, 25.0 ],
 									"text" : "receive messages from other users"
 								}
 
@@ -1190,7 +1193,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 396.0, 376.0, 114.0, 23.0 ],
+									"patching_rect" : [ 354.0, 355.0, 114.0, 23.0 ],
 									"text" : "print CidLinkClient"
 								}
 
@@ -1203,7 +1206,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 79.0, 149.0, 190.0, 51.0 ],
+									"patching_rect" : [ 37.0, 128.0, 190.0, 51.0 ],
 									"text" : "Make sure your address is including http:// and a :<port>"
 								}
 
@@ -1221,7 +1224,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 390.0, 168.0, 26.0, 24.0 ],
+									"patching_rect" : [ 348.0, 147.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1241,7 +1244,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 45.0, 244.0, 26.0, 24.0 ],
+									"patching_rect" : [ 3.0, 223.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1261,7 +1264,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 45.0, 198.0, 26.0, 24.0 ],
+									"patching_rect" : [ 3.0, 177.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -1277,7 +1280,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 259.0, 199.0, 131.0, 25.0 ],
+									"patching_rect" : [ 217.0, 178.0, 131.0, 25.0 ],
 									"text" : "join a server"
 								}
 
@@ -1289,7 +1292,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.0, 199.0, 178.0, 23.0 ],
+									"patching_rect" : [ 37.0, 178.0, 178.0, 23.0 ],
 									"text" : "address http://127.0.0.1:5000"
 								}
 
@@ -1304,7 +1307,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 511.0, 199.0, 207.0, 40.0 ],
+									"patching_rect" : [ 469.0, 178.0, 207.0, 40.0 ],
 									"text" : "send something to all connected clients to the room "
 								}
 
@@ -1318,7 +1321,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 209.0, 244.0, 131.0, 25.0 ],
+									"patching_rect" : [ 167.0, 223.0, 131.0, 25.0 ],
 									"text" : "join a room"
 								}
 
@@ -1332,7 +1335,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 415.0, 234.0, 50.0, 23.0 ]
+									"patching_rect" : [ 373.0, 213.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -1343,7 +1346,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 396.0, 199.0, 106.0, 23.0 ],
+									"patching_rect" : [ 354.0, 178.0, 106.0, 23.0 ],
 									"text" : "anythingyouwant"
 								}
 
@@ -1355,7 +1358,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.0, 244.0, 128.0, 23.0 ],
+									"patching_rect" : [ 37.0, 223.0, 128.0, 23.0 ],
 									"text" : "roomName myRoom"
 								}
 
@@ -1367,7 +1370,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 561.0, 27.0, 208.0, 141.0 ],
+									"patching_rect" : [ 456.0, 6.0, 208.0, 141.0 ],
 									"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\nenricopietrocola.com/software\n\nhttps://github.com/EnricoPietrocola/CidLinkMax\n\nWith the support of Tempo Reale\ntemporeale.it"
 								}
 
@@ -1381,7 +1384,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 532.0, 305.0, 50.0, 23.0 ]
+									"patching_rect" : [ 490.0, 284.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -1392,7 +1395,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 462.0, 305.0, 68.0, 23.0 ],
+									"patching_rect" : [ 420.0, 284.0, 68.0, 23.0 ],
 									"text" : "something"
 								}
 
@@ -1404,7 +1407,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 396.0, 271.0, 88.0, 23.0 ],
+									"patching_rect" : [ 354.0, 250.0, 88.0, 23.0 ],
 									"text" : "prepend send"
 								}
 
@@ -1416,7 +1419,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 396.0, 338.0, 85.0, 23.0 ],
+									"patching_rect" : [ 354.0, 317.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -1424,11 +1427,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 57.0, 91.0, 490.0, 36.0 ],
+									"patching_rect" : [ 15.0, 70.0, 436.0, 51.0 ],
 									"text" : "A room based, easy to setup, real-time server/client communication system built for the internet, reliable connections even on mobile networks."
 								}
 
@@ -1440,7 +1443,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 27.0, 301.0, 62.0 ],
+									"patching_rect" : [ 13.0, 6.0, 301.0, 62.0 ],
 									"text" : "CidLinkClient"
 								}
 
@@ -1463,7 +1466,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 88.5, 240.0, 72.0, 240.0, 72.0, 324.0, 405.5, 324.0 ],
+									"midpoints" : [ 46.5, 219.0, 30.0, 219.0, 30.0, 303.0, 363.5, 303.0 ],
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -1471,7 +1474,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 88.5, 307.0, 405.5, 307.0 ],
+									"midpoints" : [ 46.5, 286.0, 363.5, 286.0 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -1493,7 +1496,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 83.5, 393.0, 60.0, 393.0, 60.0, 333.0, 405.5, 333.0 ],
+									"midpoints" : [ 41.5, 372.0, 18.0, 372.0, 18.0, 312.0, 363.5, 312.0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -1546,7 +1549,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 787.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
