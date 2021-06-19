@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
         if (requestedRoom != null) {
             if (requestedRoom.allowedList.indexOf(socket.id) !== -1) {
                 socket.to(room).emit('datachannel', data)
-                //console.log(data)
+                console.log(data)
             } else {
                 socket.emit('systemchannel', 'Wrong Password')
             }

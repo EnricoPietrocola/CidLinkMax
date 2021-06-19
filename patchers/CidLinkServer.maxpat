@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1422.0, 913.0 ],
+		"rect" : [ 314.0, 114.0, 1422.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -119,19 +119,6 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 433.0, 350.0, 72.0, 22.0 ],
 					"text" : "route stdout"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-53",
-					"linecount" : 6,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.5, 375.0, 59.0, 91.0 ],
-					"text" : "start success dictionary u524000452"
 				}
 
 			}
@@ -372,14 +359,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"order" : 2,
-					"source" : [ "obj-1", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 1 ]
@@ -390,7 +369,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"midpoints" : [ 393.5, 337.0, 473.0, 337.0, 473.0, 115.0, 489.0, 115.0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-1", 1 ]
 				}
 
