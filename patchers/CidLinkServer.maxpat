@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 294.5, 35.0, 58.0, 22.0 ],
+					"patching_rect" : [ 7.5, 5.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 382.5, 128.0, 71.0, 22.0 ],
+					"patching_rect" : [ 93.5, 11.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 347.5, 98.0, 54.0, 22.0 ],
+					"patching_rect" : [ 7.5, 65.0, 54.0, 22.0 ],
 					"text" : "sel done"
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 294.5, 63.0, 72.0, 22.0 ],
+					"patching_rect" : [ 7.5, 31.0, 72.0, 22.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -94,7 +94,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 723.0, 558.0, 30.0, 30.0 ]
+					"patching_rect" : [ 434.0, 414.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 723.0, 524.0, 71.0, 22.0 ],
+					"patching_rect" : [ 434.0, 380.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -117,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 722.0, 494.0, 72.0, 22.0 ],
+					"patching_rect" : [ 433.0, 350.0, 72.0, 22.0 ],
 					"text" : "route stdout"
 				}
 
@@ -130,8 +130,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 609.5, 519.0, 61.0, 91.0 ],
-					"text" : "stdout \"new websocket connection\""
+					"patching_rect" : [ 320.5, 375.0, 59.0, 91.0 ],
+					"text" : "start success dictionary u524000452"
 				}
 
 			}
@@ -143,20 +143,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 673.0, 519.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 429.5, 519.0, 50.0, 36.0 ],
-					"text" : "disconnected"
+					"patching_rect" : [ 384.0, 375.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -169,7 +156,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 305.0, 150.5, 30.0, 30.0 ]
+					"patching_rect" : [ 21.5, 121.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -181,21 +168,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 383.0, 525.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-72",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 621.0, 326.0, 98.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1179.0, 158.5, 98.0, 22.0 ],
-					"text" : "script npm install"
+					"patching_rect" : [ 94.0, 366.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -206,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.0, 455.0, 71.0, 22.0 ],
+					"patching_rect" : [ 94.0, 335.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -218,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 413.0, 207.5, 34.0 ],
+					"patching_rect" : [ 101.0, 293.0, 207.5, 34.0 ],
 					"text" : "Use @autostart 1 when your script should start once you open the patch"
 				}
 
@@ -230,7 +203,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 613.0, 425.0, 79.0, 22.0 ],
+					"patching_rect" : [ 324.0, 305.0, 79.0, 22.0 ],
 					"text" : "route running"
 				}
 
@@ -242,7 +215,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 667.5, 163.0, 117.0, 24.0 ],
+					"patching_rect" : [ 378.5, 43.0, 117.0, 24.0 ],
 					"text" : "Reveal the script"
 				}
 
@@ -254,7 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 618.5, 163.0, 41.0, 22.0 ],
+					"patching_rect" : [ 329.5, 43.0, 41.0, 22.0 ],
 					"text" : "reveal"
 				}
 
@@ -274,7 +247,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 762.5, 250.0, 400.0, 220.0 ],
+					"patching_rect" : [ 479.5, 123.0, 400.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 877.0, 182.5, 400.0, 220.0 ],
 					"viewvisibility" : 1
@@ -288,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 404.5, 225.5, 150.0, 34.0 ],
+					"patching_rect" : [ 115.5, 105.5, 150.0, 34.0 ],
 					"text" : "The whole family of script control messages"
 				}
 
@@ -300,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.5, 322.5, 83.0, 22.0 ],
+					"patching_rect" : [ 115.5, 202.5, 83.0, 22.0 ],
 					"text" : "script running"
 				}
 
@@ -312,7 +285,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.5, 264.5, 114.0, 22.0 ],
+					"patching_rect" : [ 115.5, 144.5, 114.0, 22.0 ],
 					"text" : "script npm --version"
 				}
 
@@ -324,7 +297,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.5, 293.5, 119.0, 22.0 ],
+					"patching_rect" : [ 115.5, 173.5, 119.0, 22.0 ],
 					"text" : "script processStatus"
 				}
 
@@ -336,7 +309,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.5, 352.5, 75.0, 22.0 ],
+					"patching_rect" : [ 115.5, 232.5, 75.0, 22.0 ],
 					"text" : "script status"
 				}
 
@@ -348,7 +321,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 505.0, 158.5, 65.0, 22.0 ],
+					"patching_rect" : [ 216.0, 38.5, 65.0, 22.0 ],
 					"text" : "script stop"
 				}
 
@@ -360,7 +333,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.0, 158.5, 81.0, 22.0 ],
+					"patching_rect" : [ 94.0, 38.5, 81.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 877.0, 134.5, 67.0, 36.0 ],
@@ -376,13 +349,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 383.0, 384.0, 378.0, 22.0 ],
+					"patching_rect" : [ 94.0, 264.0, 378.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"args" : [ 5000 ],
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -418,7 +389,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 682.5, 457.0, 753.0, 457.0, 753.0, 235.0, 772.0, 235.0 ],
+					"midpoints" : [ 393.5, 337.0, 473.0, 337.0, 473.0, 115.0, 489.0, 115.0 ],
 					"order" : 3,
 					"source" : [ "obj-1", 1 ]
 				}
@@ -427,22 +398,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 462.5, 299.0, 333.5, 299.0 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
-					"order" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
-					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -464,6 +427,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
+					"midpoints" : [ 70.0, 60.0, 18.0, 60.0, 18.0, 60.0, 17.0, 60.0 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -471,6 +435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
+					"midpoints" : [ 52.0, 90.0, 90.0, 90.0, 90.0, 6.0, 103.0, 6.0 ],
 					"source" : [ "obj-23", 1 ]
 				}
 
@@ -478,7 +443,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 514.5, 198.5, 392.5, 198.5 ],
+					"midpoints" : [ 225.5, 78.5, 103.5, 78.5 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -486,7 +451,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 628.0, 221.0, 392.5, 221.0 ],
+					"midpoints" : [ 339.0, 101.0, 103.5, 101.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -494,7 +459,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 414.0, 376.0, 392.5, 376.0 ],
+					"midpoints" : [ 125.0, 256.0, 103.5, 256.0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -509,7 +474,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 414.0, 316.0, 392.5, 316.0 ],
+					"midpoints" : [ 125.0, 196.0, 103.5, 196.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -524,7 +489,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 414.0, 289.0, 392.5, 289.0 ],
+					"midpoints" : [ 125.0, 169.0, 103.5, 169.0 ],
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -532,7 +497,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 414.0, 346.0, 392.5, 346.0 ],
+					"midpoints" : [ 125.0, 226.0, 103.5, 226.0 ],
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -548,13 +513,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-72", 0 ]
 				}
 
 			}
