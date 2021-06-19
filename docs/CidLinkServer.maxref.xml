@@ -44,7 +44,7 @@
 
     <!--ARGUMENTS-->
     <objarglist>
-        <objarg name="@" optional="1" type="float">
+        <objarg name="@" optional="1" type="int">
             <digest>Port the server will listen to</digest>
         </objarg>
     </objarglist>
