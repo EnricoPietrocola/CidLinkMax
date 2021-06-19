@@ -213,8 +213,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 366.0, 355.0, 126.0, 22.0 ],
 					"text" : "CidLinkServer @7776"
 				}
@@ -272,7 +272,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-2", 2 ]
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
