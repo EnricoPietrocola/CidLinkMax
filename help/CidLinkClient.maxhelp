@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 708.0, 588.0 ],
+						"rect" : [ 100.0, 111.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -101,12 +101,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 35.0, 262.0, 219.0, 23.0 ],
-									"text" : "address http://116.203.114.204:5000"
+									"patching_rect" : [ 35.0, 262.0, 202.0, 38.0 ],
+									"text" : "address http://enricopietrocola.com:5000"
 								}
 
 							}
@@ -225,7 +226,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 247.0, 262.0, 103.0, 25.0 ],
+									"patching_rect" : [ 239.0, 268.5, 103.0, 25.0 ],
 									"text" : "join a server"
 								}
 
@@ -1100,7 +1101,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 111.0, 708.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 708.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
