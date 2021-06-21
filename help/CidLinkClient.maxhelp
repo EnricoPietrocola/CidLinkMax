@@ -106,7 +106,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 35.0, 262.0, 202.0, 38.0 ],
+									"patching_rect" : [ 42.0, 269.0, 202.0, 38.0 ],
 									"text" : "address http://enricopietrocola.com:5000"
 								}
 
@@ -124,7 +124,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 342.0, 439.0, 26.0, 24.0 ],
+									"patching_rect" : [ 349.0, 446.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "4",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -141,7 +141,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 493.0, 416.5, 105.0, 70.0 ],
+									"patching_rect" : [ 500.0, 423.5, 105.0, 70.0 ],
 									"text" : "receive messages from other users"
 								}
 
@@ -152,7 +152,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 374.0, 440.0, 114.0, 23.0 ],
+									"patching_rect" : [ 381.0, 447.0, 114.0, 23.0 ],
 									"text" : "print CidLinkClient"
 								}
 
@@ -170,7 +170,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 368.0, 232.0, 26.0, 24.0 ],
+									"patching_rect" : [ 375.0, 239.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "3",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -190,7 +190,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 7.0, 335.0, 26.0, 24.0 ],
+									"patching_rect" : [ 14.0, 342.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "2",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -210,7 +210,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 7.0, 262.0, 26.0, 24.0 ],
+									"patching_rect" : [ 14.0, 269.0, 26.0, 24.0 ],
 									"rounded" : 60.0,
 									"text" : "1",
 									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -226,7 +226,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 239.0, 268.5, 103.0, 25.0 ],
+									"patching_rect" : [ 246.0, 275.5, 103.0, 25.0 ],
 									"text" : "join a server"
 								}
 
@@ -241,7 +241,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 484.0, 232.0, 110.0, 85.0 ],
+									"patching_rect" : [ 491.0, 239.0, 110.0, 85.0 ],
 									"text" : "send something to all connected clients to the room "
 								}
 
@@ -255,7 +255,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 187.0, 335.0, 98.0, 25.0 ],
+									"patching_rect" : [ 194.0, 342.0, 98.0, 25.0 ],
 									"text" : "join a room"
 								}
 
@@ -269,7 +269,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 393.0, 298.0, 50.0, 23.0 ]
+									"patching_rect" : [ 400.0, 305.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -280,7 +280,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 374.0, 263.0, 106.0, 23.0 ],
+									"patching_rect" : [ 381.0, 270.0, 106.0, 23.0 ],
 									"text" : "anythingyouwant"
 								}
 
@@ -292,7 +292,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 41.0, 335.0, 128.0, 23.0 ],
+									"patching_rect" : [ 48.0, 342.0, 128.0, 23.0 ],
 									"text" : "roomName myRoom"
 								}
 
@@ -306,7 +306,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 510.0, 369.0, 50.0, 23.0 ]
+									"patching_rect" : [ 517.0, 376.0, 50.0, 23.0 ]
 								}
 
 							}
@@ -317,7 +317,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 440.0, 369.0, 68.0, 23.0 ],
+									"patching_rect" : [ 447.0, 376.0, 68.0, 23.0 ],
 									"text" : "something"
 								}
 
@@ -329,7 +329,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 374.0, 335.0, 88.0, 23.0 ],
+									"patching_rect" : [ 381.0, 342.0, 88.0, 23.0 ],
 									"text" : "prepend send"
 								}
 
@@ -341,20 +341,21 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 374.0, 402.0, 85.0, 23.0 ],
+									"patching_rect" : [ 381.0, 409.0, 85.0, 23.0 ],
 									"text" : "CidLinkClient"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"fontface" : 1,
 									"id" : "obj-4",
 									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 7.0, 65.0, 494.0, 96.0 ],
-									"text" : "CidLink has a self hosted test server available for testing. \nAt the moment this server instance is not reliable and available only for testing purposes, please consider using it only for getting a deeper understanding of how CidLink works and make sure to host your own instance for production purposes, all files and documents are available on github https://github.com/EnricoPietrocola/CidLinkServer."
+									"patching_rect" : [ 7.0, 65.0, 472.0, 96.0 ],
+									"text" : "CidLink has a self hosted test server available for testing. \nAt the moment this server instance is not reliable and available only for testing purposes, please consider using it only to get a deeper understanding of how CidLink works and make sure to host your own instance for production purposes, all files and documents are available on github https://github.com/EnricoPietrocola/CidLinkServer."
 								}
 
 							}
