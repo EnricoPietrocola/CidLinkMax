@@ -11,8 +11,9 @@ A room based, easy to setup, real-time server/client communication system built 
 ## How to install
 Download and extract the zip or clone the repo in the packages folder in your Max Packages folder as you would do with any other package (e.g. C:/Users/MyUser/Documents/Max8/Packages)
 
-To see how the objects work, create a [CidLinkClient] or a [CidLinkServer] object in your patch and open the helpfiles.
+To see how the objects work, open the CIdLink patch in Max's Extras dropdown menu.
 
+## Introduction video
 [![Introduction](https://img.youtube.com/vi/TwJqSj1HM-Y/0.jpg)](https://www.youtube.com/watch?v=TwJqSj1HM-Y)
 
 ### **With the support of Tempo Reale**
