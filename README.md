@@ -13,6 +13,8 @@ Download and extract the zip or clone the repo in the packages folder in your Ma
 
 To see how the objects work, create a [CidLinkClient] or a [CidLinkServer] object in your patch and open the helpfiles.
 
+[![Introduction](https://img.youtube.com/vi/TwJqSj1HM-Y/0.jpg)](https://www.youtube.com/watch?v=TwJqSj1HM-Y)
+
 ### **With the support of Tempo Reale**
 
 [![temporeale.it](https://raw.githubusercontent.com/EnricoPietrocola/Cid/master/temporealelogo.png)](https://temporeale.it/en/)
