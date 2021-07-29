@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 645.0, 480.0 ],
+		"rect" : [ 60.0, 231.0, 645.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 419.0, 412.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.945098039215686, 0.945098039215686, 0.945098039215686, 1.0 ],
 					"id" : "obj-29",
@@ -139,7 +150,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 341.0, 51.0, 284.0, 62.0 ],
 					"text" : "https://github.com/EnricoPietrocola/CidLinkMax\n\nWith the support of Tempo Reale\ntemporeale.it",
-					"textcolor" : [ 0.890196078431372, 0.890196078431372, 0.890196078431372, 1.0 ]
+					"textcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 				}
 
 			}
@@ -178,7 +189,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 405.0, 69.0, 22.0 ],
+					"patching_rect" : [ 479.0, 379.0, 69.0, 22.0 ],
 					"text" : "print cidlink"
 				}
 
@@ -192,7 +203,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 343.0, 7.0, 280.0, 48.0 ],
 					"text" : "© Enrico Pietrocola enricopietrocola@gmail.com\nenricopietrocola.com/software\n",
-					"textcolor" : [ 0.890196078431372, 0.890196078431372, 0.890196078431372, 1.0 ]
+					"textcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 				}
 
 			}
@@ -206,7 +217,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 26.0, 7.0, 299.0, 81.0 ],
 					"text" : "Cid Link",
-					"textcolor" : [ 0.890196078431372, 0.890196078431372, 0.890196078431372, 1.0 ]
+					"textcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 				}
 
 			}
@@ -282,7 +293,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 26.0, 133.0, 597.0, 29.0 ],
 					"text" : "Max adaptation of the NodeJS Cid Link project.",
-					"textcolor" : [ 0.890196078431372, 0.890196078431372, 0.890196078431372, 1.0 ]
+					"textcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 				}
 
 			}
@@ -295,7 +306,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 26.0, 164.0, 597.0, 48.0 ],
 					"text" : "A room based, easy to setup, real-time server/client communication system built for the internet. Reliable connections even on mobile networks. Based on SocketIO. Easily connect messages and dictionaries in your patches over the internet.",
-					"textcolor" : [ 0.890196078431372, 0.890196078431372, 0.890196078431372, 1.0 ]
+					"textcolor" : [ 0.192156862745098, 0.192156862745098, 0.192156862745098, 1.0 ]
 				}
 
 			}
@@ -377,7 +388,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"order" : 1,
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -471,7 +491,7 @@
 			}
  ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 1.0 ]
+		"bgcolor" : [ 0.815686274509804, 0.815686274509804, 0.815686274509804, 1.0 ]
 	}
 
 }
