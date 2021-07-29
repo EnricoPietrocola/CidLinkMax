@@ -41,13 +41,11 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 411.0, 50.0, 36.0 ],
-					"text" : "stdout \"22\""
+					"patching_rect" : [ 443.0, 411.0, 50.0, 22.0 ]
 				}
 
 			}
