@@ -41,11 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 419.0, 412.0, 50.0, 22.0 ]
+					"patching_rect" : [ 443.0, 411.0, 50.0, 36.0 ],
+					"text" : "stdout \"22\""
 				}
 
 			}
@@ -189,7 +191,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 379.0, 69.0, 22.0 ],
+					"patching_rect" : [ 501.0, 379.0, 69.0, 22.0 ],
 					"text" : "print cidlink"
 				}
 
@@ -318,8 +320,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 343.0, 379.0, 126.0, 22.0 ],
-					"text" : "CidLinkServer @7776"
+					"patching_rect" : [ 343.0, 379.0, 150.0, 22.0 ],
+					"text" : "CidLinkServer @port 7776"
 				}
 
 			}
