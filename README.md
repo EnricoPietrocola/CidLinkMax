@@ -24,3 +24,4 @@ Thanks to JetBrains for giving me their open source license in order to work on 
 
 [![JetBrainLogo](https://raw.githubusercontent.com/EnricoPietrocola/Cid/master/jetbrains128.png)](https://www.jetbrains.com/?from=CidReader(AndroidandWeb))
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X1740RS)
